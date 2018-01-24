@@ -2,21 +2,21 @@ FROM ubuntu:16.04
 
 RUN apt-get update && \
     apt-get install -y \
-	# Tools used during docker build
+        # Tools used during docker build
         ca-certificates \
         curl \
-	jq \
-	# Source control
+        jq \
+        # Source control
         git \
-	# prjxray build tools
+        # prjxray build tools
         build-essential \
         python \
         cmake \
-	clang-format \
+        clang-format \
         # vpr build tools
-	bison \
-	flex \
-	fontconfig && \
+        bison \
+        flex \
+        fontconfig && \
     rm -rf /var/lib/apt
 
 # Install gosu so the entrypoint can switch to a non-root account at runtime. 
