@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 if [ $# -lt 1 ]; then
   >&2 echo "Usage: stream_url.sh <URL>"
