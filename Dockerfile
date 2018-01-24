@@ -11,6 +11,7 @@ RUN apt-get update && \
         # prjxray build tools
         build-essential \
         python \
+        python3 \
         cmake \
         clang-format \
         # vpr build tools
