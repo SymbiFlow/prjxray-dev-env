@@ -40,6 +40,7 @@ ARG VIVADO_VERSION=2017.2
 ARG VIVADO_RELEASE=0616_1
 ARG VIVADO_INSTALLER_DIR=Xilinx_Vivado_SDK_${VIVADO_VERSION}_${VIVADO_RELEASE}
 ENV VIVADO_BIN=/opt/Xilinx/Vivado/${VIVADO_VERSION}/bin
+ENV PATH=$PATH:$VIVADO_BIN
 
 COPY install_config.txt /staging/
 # Use a wildcard for the token so the copy won't fail if it doesn't exist.
