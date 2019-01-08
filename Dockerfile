@@ -13,6 +13,11 @@ RUN apt-get update && \
         python \
         cmake \
 	clang-format \
+	# Python needs
+	python3 \
+	virtualenv \
+	python3-virtualenv \
+	python3-yaml \
         # vpr build tools
 	bison \
 	flex \
