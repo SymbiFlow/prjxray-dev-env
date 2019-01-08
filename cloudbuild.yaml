@@ -12,6 +12,8 @@ steps:
     - '-t'
     - '${_GCR_ZONE}/$PROJECT_ID/${_IMAGE_NAME}:${SHORT_SHA}'
     - '.'
+options:
+ diskSizeGb: 200
 timeout: '7200s'
 substitutions:
   _GCR_ZONE: 'gcr.io'
