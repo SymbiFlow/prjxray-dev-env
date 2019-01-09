@@ -18,6 +18,7 @@ RUN apt-get update && \
 	virtualenv \
 	python3-virtualenv \
 	python3-yaml \
+	python3-dev \
         # vpr build tools
 	bison \
 	flex \
